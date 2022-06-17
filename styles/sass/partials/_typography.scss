@@ -1,0 +1,50 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $bodyFont;
+    font-size: 2rem;
+    color: $black;
+}
+
+p {
+    line-height: 3.2rem;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $headingFont;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+//heading font stylings
+h1 {
+    font-size: 13.8rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 8rem;
+    line-height: 9.2rem;
+}
+
+h3, h4, h5 {
+    font-size: 4.2rem;
+    letter-spacing: 1px;
+}
+
+h4 {
+    font-size: 3.2rem;
+}
+
+h5 {
+    font-size: 2.5rem;
+}
+
+.emailAddress {
+    font-family: $headingFont;
+    font-size: 2.6rem;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}

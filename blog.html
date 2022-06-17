@@ -5,27 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Captured: Blog</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto&display=swap" rel="stylesheet">
+    
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/acf2ac11d5.js" crossorigin="anonymous"></script>
+    
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
+    <!-- SKIP LINK -->
+    <a href="#mainContent" class="skip-link">Skip to main content.</a>
+
     <!-- HEADER SECTION -->
     <header>
-        <div class="wrapper">
-            <!-- Navigation -->
-            <nav class="navBar">
+        <!-- Navigation -->
+        <nav class="navBar">
+            <div class="wrapper">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="./blog.html">Blog</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
-            </nav> <!-- END nav -->
+            </div>
+        </nav> <!-- END nav -->
         
+        <div class="wrapper">
             <h2>Blog</h2>
         </div> <!-- END wrapper -->
     </header> <!-- END header section -->
 
     <!-- BLOG SECTION -->
-    <main>
+    <main id="mainContent">
         <!-- BLOG ARTICLE -->
         <article class="blog">
             <div class="blogImgContainer">
@@ -35,7 +51,7 @@
             <div class="blogTextContainer">
                 <div class="wrapper">
                     <h3>Finding great locations</h3>
-                    <p class="postDate">Monday May 4th, 2019 by Dieula</p>
+                    <p class="postDate"><time>Monday May 4th, 2019</time> by Dieula</p>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestiae odit quod accusamus earum harum quaerat sit laborum labore, recusandae alias iusto aut tempore aliquid, sequi praesentium sint fuga quis nulla a doloremque dolorem ullam voluptas vero? Mollitia nesciunt vitae tempore adipisci praesentium voluptas cupiditate facere iusto expedita molestiae eum dicta quisquam eius, modi, deserunt voluptates dolorem soluta amet consectetur illum. Ad id nulla natus sit laudantium nesciunt nobis enim debitis ratione libero, perspiciatis odio. Modi laudantium provident voluptate suscipit officia aut dolore fugit earum ex obcaecati, quo eligendi sed illum amet aliquid at dolorum nostrum inventore voluptatum quis eius doloribus dolores. Quibusdam odio quo molestias magni, corrupti sint ipsa! Necessitatibus impedit exercitationem voluptatem placeat saepe? Nisi amet qui rerum quaerat, corrupti consequuntur odio totam doloremque aliquid perferendis sapiente beatae a eum voluptatem ullam nihil? Quae, corporis. Tempore quaerat, totam impedit, omnis, dolor suscipit id vel et blanditiis ducimus vero explicabo laborum corrupti libero accusamus voluptatum placeat tenetur repudiandae officia dignissimos cum neque delectus similique. Eveniet sint inventore accusamus deserunt quibusdam minima odit in, nobis expedita. Sit quasi eligendi esse tenetur ea doloribus voluptate corrupti nisi, impedit in id reiciendis recusandae cumque minima exercitationem eum! Illum sit architecto unde optio impedit necessitatibus voluptatem, fugiat ad aspernatur nam accusantium quia aliquid laudantium quidem in esse hic iure! Vitae ab nobis voluptatibus perferendis totam, nam expedita earum eveniet! Autem expedita velit, eligendi error tenetur quisquam, porro quasi corrupti veniam ducimus fuga perspiciatis quod ab reprehenderit assumenda aliquid quae! Facere ullam quisquam recusandae odio nam! Vero, debitis. Nisi quidem, harum et quis officiis atque sequi minus fuga natus unde inventore eaque consequuntur quae molestiae reprehenderit incidunt, consectetur accusamus eligendi doloremque omnis exercitationem facilis. Laboriosam facilis quis similique possimus eius, hic ipsam iste ab alias ut iure earum ipsum laborum! Quo ullam eos voluptatem.</p>
                 </div> <!-- END wrapper -->
@@ -46,41 +62,81 @@
         <section class="comments">
             <div class="wrapper">
                 <!-- commentor 1 -->
-                <section class="commentor">
+                <article class="commentor">
                     <div class="commentorImgContainer">
                         <img src="./captured-final-assets/comment-1.jpg" alt="a close up shot of a bearded man wearing a snapback hat">
                     </div> <!-- END commentorImgContainer -->
                 
                     <div class="commentorTextContainer">
-                        <p class="postDate">Tuesday October 9th by Jeremy</p>
+                        <p class="postDate"><time>Tuesday October 9th</time> by Jeremy</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa aliquid similique odit nihil facere
                             deleniti debitis. Quo placeat repellat nulla error exercitationem corrupti, consequatur adipisci enim?
                             Aspernatur, sint tenetur.</p>
                     </div> <!-- END commentorTextContainer -->
-                </section> <!-- END commentor 1-->
+                </article> <!-- END commentor 1-->
 
                 <!-- commentor 2 -->
-                <section class="commentor">
+                <article class="commentor">
                     <div class="commentorImgContainer">
                         <img src="./captured-final-assets/comment-2.jpg" alt="a close up shot of a blond girl smiling">
                     </div> <!-- END commentorImgContainer -->
                 
                     <div class="commentorTextContainer">
-                        <p class="postDate">Tuesday October 10th by Julia</p>
+                        <p class="postDate"><time>Tuesday October 10th</time> by Julia</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa aliquid similique odit nihil facere
                             deleniti debitis. Quo placeat repellat nulla error exercitationem corrupti, consequatur adipisci enim?
                             Aspernatur, sint tenetur.</p>
                     </div> <!-- END commentorTextContainer -->
-                </section> <!-- END commentor 2-->
+                </article> <!-- END commentor 2-->
             </div> <!-- END wrapper -->
-        </section> <!-- END comments section -->
+
+            <!-- COMMENT SUBMISSION -->
+            <form action="">
+                <label for="name" class="sr-only">Name</label>
+                <input type="text" id="name" placeholder="Name">
+
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" id="email">
+
+                <label for="addComment" class="sr-only">Comment</label>
+                <textarea id="addComment" cols="30" rows="10"></textarea>
+
+                <button type="submit">Post Comment</button>
+            </form> <!-- END comment submission form -->
+        </section> <!-- END comments section -->        
     </main>
 
     <!-- SIDEBAR SECTION -->
-    <aside>
+    <aside class="sideBar">
         <div class="sidebarImgContainer">
-            <img src="" alt="">
-        </div>
-    </aside>
+            <img src="./captured-final-assets/side-blog-image.jpg" alt="A shot of a floating camera lense in front of the ocean">
+        </div> <!-- END sidebarImgContainer -->
+
+        <!-- sidebar text section 1 -->
+        <section class="sidebarText">
+            <h5>About Captured</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quidem vero libero. 
+                <a href="#" class="sidebarLink">Find out more.</a>
+            </p>
+        </section> <!-- END sidebar text section 1-->
+
+        <!-- sidebar text section 2 -->
+        <section class="sidebarText">
+            <h5>Recent posts</h5>
+            <ul>
+                <li><a href="#">Donec facilisis tortor ut</a></li>
+                <li><a href="#">Augue lacinia at viverra</a></li>
+                <li><a href="#">Semper sed sapien metus</a></li>
+                <li><a href="#">Scelerisque nec pharetra id</a></li>
+            </ul>
+        </section> <!-- END sidebar text section 2-->
+
+    </aside> <!-- END sidebar section -->
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <p>Copyright &copy; 2018 HackerYou</p>
+    </footer>
+
 </body>
 </html>

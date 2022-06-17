@@ -5,33 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Captured: Homepage</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/acf2ac11d5.js" crossorigin="anonymous"></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
+    <!-- SKIP LINK -->
+    <a href="#mainContent" class="skip-link">Skip to main content.</a>
+
     <!-- HEADER SECTION -->
     <header>
-        <div class="wrapper">
-            <!-- Navigation -->
-            <nav class="navBar">
+        <!-- Navigation -->
+        <nav class="navBar">
+            <div class="wrapper">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="./blog.html">Blog</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
-            </nav> <!-- END nav -->
-            
+            </div>
+        </nav> <!-- END nav -->
+
+        <div class="wrapper">           
             <h1>Captured</h1>
-        </div> <!-- END wrapper -->    
+        </div>
+        
+        <div class="headerImg"></div>
     </header> <!-- END header -->
 
     <!-- MAIN SECTION -->
-    <main>
+    <main id="mainContent">
         <!-- ABOUT SECTION -->
         <section class="about">
             <div class="wrapper">
                 <h3>What is Captured?</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor excepturi id explicabo dignissimos vitae assumenda voluptatem, ea, consectetur sequi, dolore amet sunt aut asperiores a. Dicta aperiam eligendi perspiciatis neque, repudiandae labore animi quisquam veritatis temporibus. Fuga nulla id delectus amet dolore, modi temporibus, impedit voluptates odio eveniet saepe! Quaerat.</p>
-                <a href="#">Find out more</a>
+                <a href="#" class="linkBtn">Find out more</a>
             </div>
         </section> <!-- END about section-->
 
@@ -48,7 +66,7 @@
                     <div class="wrapper">
                         <h4>Unlock your skills</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime qui nam corrupti aspernatur pariatur vel nemo harum deserunt veniam, doloremque recusandae totam, amet eos ipsam sed laudantium velit ducimus quaerat?</p>
-                        <a href="#">Read more</a>
+                        <a href="#" class="linkBtn">Read more</a>
                     </div> <!-- END wrapper -->
                 </div> <!-- END articleTextContainer -->
             </article> <!-- END article 1 -->
@@ -63,7 +81,7 @@
                     <div class="wrapper">
                         <h4>Getting new gear</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime qui nam corrupti aspernatur pariatur vel nemo harum deserunt veniam, doloremque recusandae totam, amet eos ipsam sed laudantium velit ducimus quaerat?</p>
-                        <a href="#">Read more</a>
+                        <a href="#" class="linkBtn">Read more</a>
                     </div> <!-- END wrapper -->
                 </div> <!-- END articleTextContainer -->
             </article> <!-- END article 2 -->     
@@ -73,32 +91,32 @@
         <section class="info">
             <div class="wrapper">
                 <!-- info item 1 -->
-                <section class="infoItem item1">
+                <article class="infoItem item1">
                     <h4>Top picks</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus, provident odio amet earum
                         soluta dolorem vero, non minima quibusdam sit nemo eveniet dolore ullam.</p>
-                </section> <!-- END info item 1-->
+                </article> <!-- END info item 1-->
                 
                 <!-- info item 2 -->
-                <section class="infoItem item2">
+                <article class="infoItem item2">
                     <h4>Community</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus, provident odio amet earum
                         soluta dolorem vero, non minima quibusdam sit nemo eveniet dolore ullam.</p>
-                </section> <!-- END info item 2-->
+                </article> <!-- END info item 2-->
                 
                 <!-- info item 3 -->
-                <section class="infoItem item3">
+                <article class="infoItem item3">
                     <h4>Blog</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus, provident odio amet earum
                         soluta dolorem vero, non minima quibusdam sit nemo eveniet dolore ullam.</p>
-                </section> <!-- END info item 3-->
+                </article> <!-- END info item 3-->
                 
                 <!-- info item 4 -->
-                <section class="infoItem item4">
+                <article class="infoItem item4">
                     <h4>Get in touch</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus, provident odio amet earum
                         soluta dolorem vero, non minima quibusdam sit nemo eveniet dolore ullam.</p>
-                </section> <!-- END info item 4-->
+                </article> <!-- END info item 4-->
 
             </div> <!-- END wrapper -->
         </section> <!-- END info section-->
@@ -117,6 +135,7 @@
                 <div class="featureTextContainer">
                     <h3>This month profile</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis omnis commodi error, soluta ullam cupiditate excepturi voluptatem dolorem quo est voluptatum dolore maiores eveniet ipsam qui nisi, earum illum sunt ad nam quia fugit minima perferendis modi. Quis ducimus odit ipsa, incidunt at illum, labore maxime ullam vitae dolorum cum.</p>
+                    <a href="#" class="linkBtn">Find out more</a>
                 </div> <!-- END featureTextContainer -->
             </div> <!-- END wrapper -->
         </section> <!-- END profile feature section -->
