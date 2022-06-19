@@ -148,7 +148,7 @@
 //profile feature section
 .feature {
     background-color: $ice;
-    padding: 200px 0;
+    padding: 100px 0;
 
     .wrapper {
         display: flex;
@@ -157,7 +157,8 @@
 
     .featureImgContainer {
         width: 30%;
-
+        margin-right: 5%;
+        
         img {
             box-shadow: 40px 40px $canary;
         }
@@ -169,5 +170,29 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
+    }
+}
+
+//gallery section
+.gallery {
+    padding: 100px 0;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    li {
+        flex-basis: calc(33% - 20px);
+        margin: 0 10px;
+    }
+
+    li:first-child {
+        margin-left: 0;
+    }
+
+    li:last-child {
+        margin-right: 0;
     }
 }
