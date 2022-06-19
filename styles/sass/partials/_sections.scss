@@ -136,3 +136,38 @@
 .item4::before {
     content: '\f095';
 }
+
+//banner section
+.banner {
+    background-image: url(../captured-final-assets/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+//profile feature section
+.feature {
+    background-color: $ice;
+    padding: 200px 0;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .featureImgContainer {
+        width: 30%;
+
+        img {
+            box-shadow: 40px 40px $canary;
+        }
+    }
+
+    .featureTextContainer {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}

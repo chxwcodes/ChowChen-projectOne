@@ -315,7 +315,6 @@ img {
   max-width: 1350px;
   width: 85%;
   margin: 0 auto;
-  border: 2px solid red;
 }
 
 button {
@@ -571,4 +570,47 @@ header .wrapper:nth-child(2) {
 
 .item4::before {
   content: "\f095";
+}
+
+.banner {
+  background-image: url(../captured-final-assets/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.feature {
+  background-color: #effdf3;
+  padding: 200px 0;
+}
+.feature .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.feature .featureImgContainer {
+  width: 30%;
+}
+.feature .featureImgContainer img {
+  -webkit-box-shadow: 40px 40px #fdfa69;
+          box-shadow: 40px 40px #fdfa69;
+}
+.feature .featureTextContainer {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
