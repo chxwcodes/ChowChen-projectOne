@@ -313,7 +313,7 @@ img {
 
 .wrapper {
   max-width: 1350px;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -458,7 +458,6 @@ h1 {
 }
 .articlePost .articlePostItem1 .articleTextContainer,
 .articlePost .articlePostItem2 .articleTextContainer {
-  width: 700px;
   padding: 50px 0;
 }
 .articlePost .articlePostItem2 {
