@@ -1,0 +1,48 @@
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+input,
+textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid $seaGreen;
+    font-family: $bodyFont;
+    color: $black;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+
+    &::placeholder {
+        opacity: 1;
+    }
+}
+
+textarea {
+    border: 2px solid $seaGreen;
+}
+
+input[type='name'],
+input[type='email'] {
+    width: 40%
+}
+
+//get in touch form
+.emailMe .wrapper {
+    position: relative;
+}
+
+.emailForm {
+    width: 55%;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -40px 40px $canary;
+    position: absolute;
+    top: -200px;
+    right: 0;
+    z-index: 10;
+}

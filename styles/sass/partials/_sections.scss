@@ -195,3 +195,25 @@
         margin-right: 0;
     }
 }
+
+//contact section
+.emailMe {
+    background-color: $ice;
+}
+
+.emailForm {
+    background-color: $white;
+}
+
+address {
+    font-style: normal;
+    height: calc(50vh - 50px); /*footer measurement*/
+    
+    p {
+        margin: 0;
+    }
+
+    p:first-child {
+        margin-bottom: 20px;
+    }
+}

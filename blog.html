@@ -22,7 +22,7 @@
     <a href="#mainContent" class="skip-link">Skip to main content.</a>
 
     <!-- HEADER SECTION -->
-    <header>
+    <header class="blogHeader">
         <!-- Navigation -->
         <nav class="navBar">
             <div class="wrapper">
@@ -91,12 +91,14 @@
             </div> <!-- END wrapper -->
 
             <!-- COMMENT SUBMISSION -->
-            <form action="">
-                <label for="name" class="sr-only">Name</label>
-                <input type="text" id="name" placeholder="Name">
-
-                <label for="email" class="sr-only">Email</label>
-                <input type="email" id="email">
+            <form action="" class="commentForm">
+                <fieldset>
+                    <label for="name" class="sr-only">Name</label>
+                    <input type="text" id="name" placeholder="Name">
+                    
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" id="email">
+                </fieldset>
 
                 <label for="addComment" class="sr-only">Comment</label>
                 <textarea id="addComment" cols="30" rows="10"></textarea>

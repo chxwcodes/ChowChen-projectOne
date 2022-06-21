@@ -1,7 +1,5 @@
+//index header
 header {
-    background-image: url(../captured-final-assets/header-image.jpg);
-    background-position: left;
-    background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
     position: relative;
@@ -13,6 +11,11 @@ header {
         right: 0;
         z-index: 10;
     }
+}
+
+.indexHeader {
+    background-image: url(../captured-final-assets/header-image.jpg);
+    background-position: left;
 }
 
 .headerImg {
@@ -31,6 +34,27 @@ h1 {
     text-shadow: 2px 2px #F3F3F3;
 }
 
+//blog header
+.blogHeader {
+    background-image: url(../captured-final-assets/blog-header.jpg);
+    background-position: center;
+}
+
+//contact header
+.contactHeader {
+    background-image: url(../captured-final-assets/contact-header.jpg);
+    background-position: center;
+    height: 50vh;
+
+    h2 {
+        text-align: center;
+    }
+
+    .wrapper:nth-child(2) {
+        position: absolute;
+        bottom: 50%;
+    }
+}
 
 
 
