@@ -28,7 +28,6 @@ img {
     max-width: 1350px;
     width: 90%;
     margin: 0 auto;
-    border: 2px solid red;
 }
 
 button {
@@ -44,6 +43,14 @@ button[type=submit] {
     text-transform: uppercase;
     cursor: pointer;
     background-color: $seaGreen;
+    border: 2px solid $seaGreen;
     padding: 5px 15px;
     display: inline-block;
+    transition: background-color 0.7s;
+
+    &:hover,
+    &:focus {
+        background-color: transparent;
+        border: 2px solid $black;
+    }
 }

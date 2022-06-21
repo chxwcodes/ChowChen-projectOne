@@ -315,7 +315,6 @@ img {
   max-width: 1350px;
   width: 90%;
   margin: 0 auto;
-  border: 2px solid red;
 }
 
 button {
@@ -331,8 +330,17 @@ button[type=submit] {
   text-transform: uppercase;
   cursor: pointer;
   background-color: #4ceea7;
+  border: 2px solid #4ceea7;
   padding: 5px 15px;
   display: inline-block;
+  -webkit-transition: background-color 0.7s;
+  transition: background-color 0.7s;
+}
+.linkBtn:hover, .linkBtn:focus,
+button[type=submit]:hover,
+button[type=submit]:focus {
+  background-color: transparent;
+  border: 2px solid #2c2c2c;
 }
 
 .skip-link {
@@ -665,6 +673,23 @@ h1 {
   margin-right: 0;
 }
 
+.address {
+  background-color: #effdf3;
+}
+.address .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: calc(50vh - 42px);
+}
+
 .emailMe {
   background-color: #effdf3;
 }
@@ -675,18 +700,34 @@ h1 {
 
 address {
   font-style: normal;
-  height: calc(50vh - 50px);
-  /*footer measurement*/
 }
 address p {
   margin: 0;
 }
 address p:first-child {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
-.address {
-  background-color: #effdf3;
+i {
+  font-size: 2.6rem;
+}
+
+.sidebarNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.sidebarNav ul li {
+  margin-right: 20px;
+  -webkit-transition: color 0.7s;
+  transition: color 0.7s;
+}
+.sidebarNav ul li:hover {
+  color: #4ceea7;
 }
 
 footer {
