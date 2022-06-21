@@ -315,6 +315,7 @@ img {
   max-width: 1350px;
   width: 90%;
   margin: 0 auto;
+  border: 2px solid red;
 }
 
 button {
@@ -445,6 +446,11 @@ h1 {
   bottom: 50%;
 }
 
+.blogHeader .wrapper:nth-child(2) {
+  text-align: center;
+  bottom: 50%;
+}
+
 .about {
   background-color: #effdf3;
   padding: 300px 0;
@@ -562,6 +568,16 @@ h1 {
   padding-left: 50px;
 }
 .info h4::before {
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 2.5rem;
+  font-family: "Font Awesome 6 Free";
+  width: 40px;
+  height: 40px;
+  background-color: #4ceea7;
+  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -573,16 +589,6 @@ h1 {
           align-items: center;
   position: absolute;
   left: 0;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-size: 2.5rem;
-  width: 40px;
-  height: 40px;
-  background-color: #4ceea7;
-  border-radius: 50%;
-  font-family: "Font Awesome 6 Free";
 }
 .info p {
   padding-left: 50px;
@@ -671,6 +677,26 @@ h1 {
 }
 .gallery li:last-child {
   margin-right: 0;
+}
+
+.blogMainContent {
+  background-color: #effdf3;
+  position: relative;
+  border: 2px solid orange;
+}
+
+.blogImgContainer {
+  position: absolute;
+  top: -20%;
+  right: 0;
+  border: 2px solid green;
+}
+
+.blog,
+.comments {
+  width: 60%;
+  margin-left: auto;
+  border: 2px solid blue;
 }
 
 .address {
@@ -792,9 +818,7 @@ input[type=email] {
   position: relative;
 }
 
-.emailForm {
-  width: 55%;
-  padding: 50px 100px;
+form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -802,6 +826,11 @@ input[type=email] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.emailForm {
+  width: 55%;
+  padding: 50px 100px;
   -webkit-box-shadow: -40px 40px #fdfa69;
           box-shadow: -40px 40px #fdfa69;
   position: absolute;

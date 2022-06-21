@@ -35,11 +35,14 @@ input[type='email'] {
     position: relative;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
 .emailForm {
     width: 55%;
     padding: 50px 100px;
-    display: flex;
-    flex-direction: column;
     box-shadow: -40px 40px $canary;
     position: absolute;
     top: -200px;
