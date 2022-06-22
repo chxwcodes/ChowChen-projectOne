@@ -1,12 +1,27 @@
 //blog section
-.sideBarTextContent {
+.sideBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 350px;
-    margin-top: 100px;
-    padding: 300px 20px 30px;
+    min-height: 750px;
+    margin-top: 130px;
+    padding: 50px 20px 30px;
     background-color: $white;
 
     &::before {
         content: '';
+        width: 650px;
+        height: 450px;
+        background-image: url(../captured-final-assets/side-blog-image.jpg);
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 100px;
     }
 
     h5 {
