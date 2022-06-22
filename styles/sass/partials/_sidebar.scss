@@ -1,3 +1,48 @@
+//blog section
+.sideBarTextContent {
+    width: 350px;
+    margin-top: 100px;
+    padding: 300px 20px 30px;
+    background-color: $white;
+
+    &::before {
+        content: '';
+    }
+
+    h5 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .sidebarText {
+        margin-bottom: 50px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    li {
+        padding-bottom: 10px;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+        &::before {
+            content: '\2022';
+            color: $seaGreen;
+            font-weight: bold;
+            display: inline-block;
+            margin: 0 15px;
+        }
+    }
+
+}
+
 //contact section
 .address {
     background-color: $ice;

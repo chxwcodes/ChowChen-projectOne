@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -285,6 +286,10 @@ h5 {
   text-transform: uppercase;
 }
 
+em {
+  font-weight: bold;
+}
+
 body {
   background-color: #fafafa;
 }
@@ -449,6 +454,10 @@ h1 {
 .blogHeader .wrapper:nth-child(2) {
   text-align: center;
   bottom: 50%;
+}
+
+.blogHeader h2 {
+  z-index: 10;
 }
 
 .about {
@@ -678,25 +687,117 @@ h1 {
 .gallery li:last-child {
   margin-right: 0;
 }
+.gallery img {
+  width: 100%;
+}
 
 .blogMainContent {
   background-color: #effdf3;
   position: relative;
-  border: 2px solid orange;
+}
+.blogMainContent .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .blogImgContainer {
   position: absolute;
-  top: -20%;
+  top: -15%;
   right: 0;
-  border: 2px solid green;
+  width: 955px;
+  -webkit-box-shadow: -40px 40px #fdfa69;
+          box-shadow: -40px 40px #fdfa69;
 }
 
 .blog,
 .comments {
-  width: 60%;
-  margin-left: auto;
-  border: 2px solid blue;
+  width: 625px;
+  padding: 40px;
+}
+
+.blog {
+  border-left: 10px solid #fdfa69;
+  border-bottom: 10px solid #fdfa69;
+  padding-top: 300px;
+}
+.blog h3 {
+  margin-bottom: 10px;
+}
+.blog .blogEntry {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.postDate {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.commentor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 50px;
+}
+.commentor .commentorTextContainer {
+  width: 80%;
+}
+
+.comments h4 {
+  margin-bottom: 40px;
+}
+
+.commentorTextContainer p {
+  margin: 0;
+}
+
+.sideBarTextContent {
+  width: 350px;
+  margin-top: 100px;
+  padding: 300px 20px 30px;
+  background-color: #fafafa;
+}
+.sideBarTextContent::before {
+  content: "";
+}
+.sideBarTextContent h5 {
+  margin-bottom: 20px;
+}
+.sideBarTextContent p {
+  margin: 0;
+}
+.sideBarTextContent .sidebarText {
+  margin-bottom: 50px;
+}
+.sideBarTextContent .sidebarText:last-child {
+  margin-bottom: 0;
+}
+.sideBarTextContent li {
+  padding-bottom: 10px;
+}
+.sideBarTextContent li:last-child {
+  padding-bottom: 0;
+}
+.sideBarTextContent li::before {
+  content: "•";
+  color: #4ceea7;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 15px;
 }
 
 .address {
