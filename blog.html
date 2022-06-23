@@ -48,8 +48,7 @@
                 <article class="blog">
                     <!-- BLOG HEADER IMG SECTION -->
                     <div class="blogImgContainer">
-                        <img src="./captured-final-assets/blog-post-image.jpg"
-                            alt="A brown haired lady in a dandelion field taking a picture of the sunset">
+                        <img src="./captured-final-assets/blog-post-image.jpg" alt="A brown haired lady in a dandelion field taking a picture of the sunset">
                     </div>
                 
                     <div class="blogTextContainer">
@@ -87,7 +86,9 @@
                     <h4>Comments:</h4>
                     <!-- commentor 1 -->
                     <article class="commentor">
-                        <img src="./captured-final-assets/comment-1.jpg" alt="a close up shot of a bearded man wearing a snapback hat">
+                        <div class="commentorImgContainer">
+                            <img src="./captured-final-assets/comment-1.jpg" alt="a close up shot of a bearded man wearing a snapback hat">
+                        </div>                       
                 
                         <div class="commentorTextContainer">
                             <time datetime="2019-10-09" class="postDate">Tuesday October 9th by Jeremy</time>
@@ -99,7 +100,9 @@
                 
                     <!-- commentor 2 -->
                     <article class="commentor">
-                        <img src="./captured-final-assets/comment-2.jpg" alt="a close up shot of a blond girl smiling">
+                        <div class="commentorImgContainer">
+                            <img src="./captured-final-assets/comment-2.jpg" alt="a close up shot of a blond girl smiling">
+                        </div>                  
                 
                         <div class="commentorTextContainer">
                             <time datetime="2019-10-10" class="postDate">Tuesday October 10th by Julia</time>
@@ -107,24 +110,24 @@
                                 deleniti debitis. Quo placeat repellat nulla error exercitationem corrupti, consequatur adipisci enim?
                             </p>
                         </div> <!-- END commentorTextContainer -->
-                    </article> <!-- END commentor 2-->
-                
-                    <!-- COMMENT SUBMISSION -->
-                    <form action="" class="commentForm">
-                        <fieldset>
-                            <label for="name" class="sr-only">Name</label>
-                            <input type="text" id="name" placeholder="Name">
-                
-                            <label for="email" class="sr-only">Email</label>
-                            <input type="email" id="email" placeholder="Email address">
-                        </fieldset>
-                
-                        <label for="addComment" class="sr-only">Comment</label>
-                        <textarea id="addComment" cols="30" rows="10" placeholder="Comment"></textarea>
-                
-                        <button type="submit">Post Comment</button>
-                    </form> <!-- END comment submission form -->
+                    </article> <!-- END commentor 2-->                             
                 </section> <!-- END comments section -->
+
+                <!-- COMMENTOR FORM -->
+                <form action="" class="commentForm">
+                    <fieldset>
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" placeholder="Name">
+                
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" placeholder="Email address">
+                    </fieldset>
+                
+                    <label for="addComment" class="sr-only">Comment</label>
+                    <textarea id="addComment" cols="30" rows="10" placeholder="Comment"></textarea>
+                
+                    <button type="submit">Post Comment</button>
+                </form> <!-- END comment submission form -->
             </div> <!--END left main blog contents-->
             
             <!-- right main blog contents -->
