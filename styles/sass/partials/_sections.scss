@@ -218,18 +218,18 @@
 }
 //blog content (right side)
 .leftMainContent {
-    // width: 60%;
-    width: 710px;
+    width: 60%;
 }
 
 .blog {
+    width: 100%;
     border-bottom: 10px solid $canary;
     border-left: 10px solid $canary;
     padding-left: 40px;
 }
 
 .blogTextContainer {
-    padding-top: 350px;
+    padding-top: 420px;
 
     h3 {
         margin-bottom: 20px;
@@ -249,19 +249,12 @@
     position: absolute;
     right: 0;
     top: -15%;
+    width: 55%;
 
     img {
         width: 100%;
     }
 }
-
-.blogImgBackground {
-    width: 100%;
-    height: 500px;
-    background-color: $canary;
-}
-
-
 
 //comment section
 .comments h4 {
