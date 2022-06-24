@@ -1030,6 +1030,34 @@ form {
   .blogEntry {
     padding-right: 40px;
   }
+
+  .contactHeader {
+    height: 40vh;
+  }
+
+  .emailForm {
+    -webkit-box-shadow: -20px 20px #fdfa69;
+            box-shadow: -20px 20px #fdfa69;
+    right: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  .address .wrapper {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: calc(60vh - 42px);
+    text-align: center;
+  }
+
+  .address p:first-child {
+    margin: 0;
+  }
 }
 @media (max-width: 1200px) {
   .blogHeader {
@@ -1075,6 +1103,7 @@ form {
     margin-top: 0;
     height: auto;
     width: auto;
+    border: 2px solid #2c2c2c;
   }
   .sideBar h5 {
     margin: 20px 0;
@@ -1143,6 +1172,10 @@ form {
             box-shadow: none;
     width: 100%;
     border-bottom: 10px solid #fdfa69;
+  }
+
+  .articleTextContainer {
+    width: 50%;
   }
 
   .info {

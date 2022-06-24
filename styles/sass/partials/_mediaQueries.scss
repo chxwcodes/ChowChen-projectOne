@@ -59,6 +59,29 @@
     .blogEntry {
         padding-right: 40px;
     }
+
+    //CONTACT PAGE
+    .contactHeader {
+        height: 40vh;
+    }
+
+    .emailForm {
+        box-shadow: -20px 20px $canary;
+        right: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .address .wrapper {
+        justify-content: flex-end;
+        align-items: center;
+        height: calc(60vh - 42px);  
+        text-align: center;
+    }
+
+    .address p:first-child {
+        margin: 0;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -106,6 +129,7 @@
         margin-top: 0;
         height: auto;
         width: auto;
+        border: 2px solid $black;
 
         h5 {
             margin: 20px 0;
@@ -147,6 +171,8 @@
             width: 100%;
             display: flex;
             flex-direction: row;
+
+            
         }
 
         .articlePostItem2 {
@@ -166,6 +192,10 @@
             width: 100%;
             border-bottom: 10px solid $canary;
         }
+    }
+
+    .articleTextContainer {
+        width: 50%;
     }
 
     //INDEX PAGE:icon info section
