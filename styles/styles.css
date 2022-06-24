@@ -951,7 +951,7 @@ textarea {
   border: 2px solid #4ceea7;
 }
 
-input[type=name],
+input[type=text],
 input[type=email] {
   width: 40%;
 }
@@ -1032,13 +1032,57 @@ form {
   }
 }
 @media (max-width: 1200px) {
-  .blogTextContainer {
-    padding-top: 200px;
+  .blogHeader {
+    height: 100vh;
   }
-}
-@media (max-width: 1100px) {
+
+  .leftMainContent {
+    width: 100%;
+  }
+
+  .blog {
+    border: none;
+    padding-left: 0;
+  }
+  .blog .blogEntry {
+    padding-right: none;
+  }
+
+  .blogMainContent {
+    padding: 50px 0;
+  }
+  .blogMainContent .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .blogImgContainer {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 10px solid #fdfa69;
+    position: static;
+    width: 100%;
+  }
+
   .blogTextContainer {
-    padding-top: 150px;
+    padding-top: 20px;
+  }
+
+  .sideBar {
+    padding: 30px;
+    margin-top: 0;
+    height: auto;
+    width: auto;
+  }
+  .sideBar h5 {
+    margin: 20px 0;
+  }
+  .sideBar::before {
+    width: 100%;
+    position: static;
+    margin-top: 0;
   }
 }
 @media (max-width: 1000px) {
