@@ -23,6 +23,7 @@ textarea {
 
 textarea {
     border: 2px solid $seaGreen;
+    height: 100%;
 }
 
 input[type='text'],
@@ -30,22 +31,7 @@ input[type='email'] {
     width: 40%
 }
 
-//get in touch form
-.emailMe .wrapper {
-    position: relative;
-}
-
 form {
     display: flex;
     flex-direction: column;
-}
-
-.emailForm {
-    width: 55%;
-    padding: 50px 100px;
-    box-shadow: -40px 40px $canary;
-    position: absolute;
-    top: -200px;
-    right: 0;
-    z-index: 10;
 }

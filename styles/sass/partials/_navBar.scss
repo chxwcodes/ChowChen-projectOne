@@ -12,6 +12,10 @@
 }
 
 // navbar
+nav {
+    z-index: 100;
+}
+
 .navBar {
     font-family: $headingFont;
     text-transform: uppercase;
@@ -20,28 +24,108 @@
     letter-spacing: 1px;
     text-align: center;
     display: flex;
-    z-index: 10;
     padding: 10px 0;
 
-    ul {
+    .desktopNav {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-    }
 
-    li {
-        padding: 5px;
-        margin: 0 30px;
-        border-bottom: 3px solid rgba($color: $seaGreen, $alpha: 0);
-        transition: 0.7s;
+        li {
+            padding: 5px;
+            margin: 0 30px;
+            border-bottom: 3px solid rgba($color: $seaGreen, $alpha: 0);
+            transition: 0.7s;
 
-        &:hover,
-        &:focus {
-            border-bottom: 3px solid rgba($color: $seaGreen, $alpha: 1);
+            &:hover,
+            &:focus {
+                border-bottom: 3px solid rgba($color: $seaGreen, $alpha: 1);
+            }
+        }
+        
+        li:last-child {
+            margin-right: 0;
         }
     }
+}
 
-    li:last-child {
-        margin-right: 0;
+//mobile nav
+.mobileNav {
+    display: none;
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    z-index: 100;
+
+    i {
+        font-size: 5rem;
+        text-shadow: 1px 1px $canary;
+    }
+
+    input[type=checkbox] {
+        opacity: 0;
+        position: absolute;
+
+        &:checked ~.slideOutNav {
+            left: 0;
+        }
+    }
+}
+
+.mobileMenuBtn {
+    cursor: pointer;
+}
+
+//slide out nav
+.slideOutNav {
+   position: fixed;
+   top: 0;
+   left: -500px;
+   height: 100vh;
+   background-color: $black;
+   width: 100%;
+   max-width: 400px;
+   padding: 75px 50px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   z-index: 10;
+   transition: left 0.7s;
+
+   a {
+    font-family: $headingFont;
+    text-transform: uppercase;
+    color: $white;
+    font-size: 4rem;
+    border-bottom: 3px solid rgba($color: $seaGreen, $alpha: 0);
+    transition: 0.7s;
+
+    &:hover,
+    &:focus {
+        color: $seaGreen;
+        border-bottom: 3px solid rgba($color: $seaGreen, $alpha: 1);
+    }
+   }
+
+   li {
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+   }
+}
+
+.menuClose {
+    background-color: transparent;
+    color: $white;
+    font-size: 5rem;
+    display: none;
+    justify-content: flex-end;
+    transition: color 0.7s;
+    
+    &:hover,
+    &:focus {
+        color: $seaGreen;
     }
 }

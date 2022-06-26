@@ -63,24 +63,30 @@
     //CONTACT PAGE
     .contactHeader {
         height: 40vh;
+
+        .headerText {
+            bottom: 35%;
+        }
+    }
+
+    //contact pg: email form
+    .emailMe .wrapper {
+        flex-direction: column;
+        align-items: center;
+        height: inherit;
+        padding-top: 50px;
     }
 
     .emailForm {
-        box-shadow: -20px 20px $canary;
-        right: 0;
-        left: 50%;
-        transform: translateX(-50%);
+        box-shadow: none;
+        border: 10px solid $seaGreen;
     }
 
-    .address .wrapper {
-        justify-content: flex-end;
+    //contact pg: address
+    .address {
         align-items: center;
-        height: calc(60vh - 42px);  
         text-align: center;
-    }
-
-    .address p:first-child {
-        margin: 0;
+        margin-top: 50px;
     }
 }
 
@@ -116,7 +122,8 @@
         box-shadow: none;
         border: 10px solid $canary;
         position: static;
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .blogTextContainer {
@@ -139,6 +146,10 @@
             width: 100%;
             position: static;
             margin-top: 0;
+        }
+
+        .sidebarText {
+            margin-bottom: 20px;
         }
     }
 }
@@ -248,11 +259,242 @@
 }
 
 @media (max-width: 800px){
+    .scrollDown {
+        display: block;
+    }
+
+    //navbar
+    .navBar {
+        display: none;
+    }
+
+    .mobileNav {
+        display: block;
+    }
+    
+    //index header
+    header .headerText {
+        bottom: 5%;
+    }
+
+    .headerImg {
+        display: none;
+    }
+
+    h1 {
+        font-size: 7rem;
+    }
+
+    .indexHeader {
+        height: 100vh;
+    }
+
+    //index page: sections
+    p {
+        line-height: 3rem;
+        text-align: center;
+    }
+
+    //index page: about
+    .about {
+        padding: 100px 0;
+    }
+
+    //index page: article info section
+    .articlePost {
+        padding-top: 50px;
+    }
+
+    .articlePost .articlePostItem1,
+    .articlePost .articlePostItem2 {
+        flex-direction: column;
+        align-items: center;
+
+        .articleImgContainer img {
+            width: 100%;
+        }
+    }
+
+    .articlePostItem1 .wrapper {
+        align-items: center;
+    }
+
+    .articlePost .articlePostItem2 {
+        flex-direction: column;
+
+        div:nth-child(2) > div:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .articleTextContainer {
+        width: 100%;
+    }
+
+    //index page: info section
+    .info {
+        padding: 200px 0 100px 0;
+
+        h4 {
+            padding-left: 0;
+            display: flex;
+            justify-content: center;
+
+            &::before {
+                font-size: 3.5rem;
+                width: 75px;
+                height: 75px;
+                bottom: 100%;
+                left: revert;
+            }
+        }
+
+        p {
+            padding-left: 0;
+        }
+
+        .infoItem {
+            margin-bottom: 100px;
+        }
+    }
+
+    article.infoItem:nth-child(4) {
+        margin: 0;
+    }
+
+    //index page: gallery section
+    .gallery {
+        padding: 50px 0;
+    }
+
+    .gallery ul {
+        flex-direction: column;
+        justify-content: center;
+
+        li {
+            width: 100%;
+            margin: 0 0 30px 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    //blog page
+    .leftMainContent {
+        margin-bottom: 40px;
+    }
+
+    .blogMainContent p {
+        text-align: left;
+    }
+
+    .blogTextContainer h3,
+    time.postDate:nth-child(2) {
+        text-align: center;
+        display: block;
+    }
+
+    .blogEntry {
+        margin-bottom: 40px;
+    }
+
+    .comments, 
+    .blogEntry {
+        padding: 0;
+    }
+
+    //blog page: forms
+    fieldset {
+        flex-direction: column;
+    }
+
+    input[type='text'],
+    input[type='email'] {
+        width: inherit;
+        border: 2px solid $seaGreen;
+        margin-bottom: 40px;
+    }
+
+    textarea {
+        margin-bottom: 40px;
+    }
+
+    .commentForm {
+        padding: 0;
+    }
+
+    //contact page
+    .emailForm {
+        width: 75%;
+        padding: 50px;
+        box-shadow: none;
+        border: 10px solid $canary;
+    }
+
+    .address .wrapper {
+        height: calc(60vh - 40px);
+    }
+
 
 }
 
 @media (max-width: 500px){
+    //typography
+    h2 {
+        font-size: 6rem;
+    }
 
+    h3 {
+        font-size: 3.5rem;
+    }
+
+    h4 {
+        font-size: 3rem;
+    }
+
+    //slide out menu 
+    .menuClose {
+        display: flex;
+    }
+
+    .slideOutNav {
+        padding: 50px;
+    }
+
+    //index pg: about section
+    .about h3 {
+        text-align: center;
+    }
+
+    //index pg: info section
+    .info {
+        padding: 150px 0 50px 0;
+
+        .infoItem {
+            width: 100%;
+        }
+    }
+
+    //index pg: banner
+    .banner {
+        height: 300px;
+    }
+
+    //index pg: feature profile
+    .feature .featureTextContainer {
+        width: 100%;
+    }
+
+    //index pg: about and feature section
+    .about,
+    .feature {
+        padding: 50px 0;
+    }
 }
+
 
 

@@ -26,17 +26,48 @@
         <!-- Navigation -->
         <nav class="navBar">
             <div class="wrapper">
-                <ul>
+                <ul class="desktopNav">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="#">Blog</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </div>
-        </nav> <!-- END nav -->
+            <!--END wrapper-->
+        </nav> <!-- END navBar -->
         
-        <div class="wrapper">
+        <!-- mobile hamburger nav -->
+        <nav class="mobileNav">
+            <!-- slide out menu btn -->
+            <input type="checkbox" id="openSideMenu">
+            <label for="openSideMenu" class="mobileMenuBtn">
+                <i class="fa-solid fa-bars" aria-label="Open menu button"></i>
+            </label>
+        
+            <!-- slide out nav contents -->
+            <div class="slideOutNav">
+                <button class="menuClose">x</button>
+        
+                <!-- menu content -->
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <!--END slide out menu content-->
+            </div>
+            <!--END slideOutNav -->
+        </nav> <!-- END mobileNav -->
+        
+        <div class="wrapper headerText">
             <h2>Blog</h2>
+
+            <a href="#mainContent">
+                <i class="fa-solid fa-angles-down scrollDown" aria-hidden="true"></i>
+            </a>
         </div> <!-- END wrapper -->
     </header> <!-- END header section -->
 

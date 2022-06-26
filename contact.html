@@ -26,16 +26,43 @@
         <!-- Navigation -->
         <nav class="navBar">
             <div class="wrapper">
-                <ul>
+                <ul class="desktopNav">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="./blog.html">Blog</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-        </nav> <!-- END nav -->
+            <!--END wrapper-->
+        </nav> <!-- END navBar -->
         
-        <div class="wrapper">
+        <!-- mobile hamburger nav -->
+        <nav class="mobileNav">
+            <!-- slide out menu btn -->
+            <input type="checkbox" id="openSideMenu">
+            <label for="openSideMenu" class="mobileMenuBtn">
+                <i class="fa-solid fa-bars" aria-label="Open menu button"></i>
+            </label>
+        
+            <!-- slide out nav contents -->
+            <div class="slideOutNav">
+                <button class="menuClose">x</button>
+        
+                <!-- menu content -->
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <!--END slide out menu content-->
+            </div>
+            <!--END slideOutNav -->
+        </nav> <!-- END mobileNav -->
+        
+        <div class="wrapper headerText">
             <h2>Get in touch</h2>
         </div> <!-- END wrapper -->
     </header> <!-- END header section -->
@@ -58,48 +85,47 @@
             
                 <button type="submit">Submit</button>
             </form> <!-- END form -->
-        </div>
         
+
+            <!-- ADDRESS SIDEBAR SECTION -->
+            <aside class="address">
+                <nav class="sidebarNav">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                                <span class="sr-only">Link to Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Link to Instagram</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Link to Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                                <span class="sr-only">Link to Whatsapp</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav> <!-- END sidebarNav-->
+        
+                <address>
+                    <p><a href="mailto:info@email.com" class="emailAddress">info@email.com</a></p>
+        
+                    <p>123-456-7890</p>
+                    <p>123 Queen Street West, Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V2D5</p>
+                </address>
+            </aside> <!--END sidebar section-->
+        </div><!--END wrapper-->
     </main>
 
     <!-- ADDRESS SECTION -->
-    <aside class="address">
-        <div class="wrapper">
-            <nav class="sidebarNav">
-                <ul>
-                    <li>
-                        <a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
-                            <span class="sr-only">Link to Facebook</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Link to Instagram</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i>
-                            <span class="sr-only">Link to Twitter</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-                            <span class="sr-only">Link to Whatsapp</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav> <!-- END sidebarNav-->
-
-            <address>
-                <p><a href="mailto:info@email.com" class="emailAddress">info@email.com</a></p>
-            
-                <p>123-456-7890</p>
-                <p>123 Queen Street West, Unit 10</p>
-                <p>Toronto, Ontario</p>
-                <p>M5V2D5</p>
-            </address>
-        </div> <!--END wrapper-->
-        
-    </aside>
 
     <!-- FOOTER SECTION -->
     <footer>

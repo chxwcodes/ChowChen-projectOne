@@ -4,7 +4,8 @@ header {
     height: 80vh;
     position: relative;
 
-    .wrapper:nth-child(2) {
+    .headerText {
+        text-align: center;
         position: absolute;
         bottom: 10%;
         left: 0;
@@ -34,10 +35,21 @@ h1 {
     text-shadow: 2px 2px #F3F3F3;
 }
 
+.scrollDown {
+    display: none;
+    font-size: 5rem;
+    text-shadow: 2px 2px #F3F3F3;
+    animation: iconSlideDown 1s ease-out infinite both;
+}
+
 //blog header
 .blogHeader {
     background-image: url(../captured-final-assets/blog-header.jpg);
     background-position: center;
+    
+    .headerText {
+        bottom: 50%;
+    }
 }
 
 //contact header
@@ -46,12 +58,7 @@ h1 {
     background-position: center;
     height: 50vh;
 
-    h2 {
-        text-align: center;
-    }
-
-    .wrapper:nth-child(2) {
-        position: absolute;
+    .headerText {
         bottom: 50%;
     }
 }
