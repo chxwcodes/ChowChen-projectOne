@@ -94,6 +94,10 @@
     //BLOG PAGE: header
     .blogHeader {
         height: 100vh;
+
+        .headerText {
+            bottom: 50%;
+        }
     }
 
     //BLOG PAGE ADJUSTMENTS
@@ -254,6 +258,11 @@
         p {
             text-align: center;
         }
+    }
+
+    //INDEX PG: gallery
+    .gallery {
+        padding: 50px 0;
     }
 
 }
@@ -429,7 +438,7 @@
 
     //contact page
     .contactHeader .headerText {
-        bottom: 30%;
+        bottom: 35%;
     }
 
     .emailForm {
@@ -445,7 +454,8 @@
     }
 
     h2 {
-        font-size: 6rem;
+        font-size: 4.5rem;
+        line-height: 4rem;
     }
 
     h3 {
@@ -454,6 +464,14 @@
 
     h4 {
         font-size: 3rem;
+    }
+
+    //index pg: article section
+    .articlePostItem1,
+    .articlePostItem2 {
+        .articleImgContainer {
+            width: 100%;
+        }
     }
 
     //index pg: info section
@@ -471,8 +489,14 @@
     }
 
     //index pg: feature profile
-    .feature .featureTextContainer {
-        width: 100%;
+    .feature {
+        .featureImgContainer img {
+            border: none;
+        }
+
+        .featureTextContainer {
+            width: 100%;
+        }
     }
 
     //index pg: about and feature section
@@ -481,7 +505,16 @@
         padding: 50px 0;
     }
 
-    //about pg
+    //blog page: sidebar
+    .sideBar {
+        min-height: 0;
+
+        &::before {
+            height: 300px;
+        }
+    }
+
+    //contact pg
     .emailForm {
         width: 100%;
         padding: 0;

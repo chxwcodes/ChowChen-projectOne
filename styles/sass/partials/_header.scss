@@ -20,19 +20,16 @@ header {
 }
 
 .headerImg {
-    height: 640px;
-    width: 692px;
+    height: 80%;
+    width: 40%;
     background-image: url(../captured-final-assets/header-box-image.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     right: 0;
     bottom: -20%;
     border: 50px solid $canary;
     border-right: none;  
-}
-
-h1 {
-    text-shadow: 2px 2px #F3F3F3;
 }
 
 .scrollDown {
@@ -42,34 +39,24 @@ h1 {
     animation: iconSlideDown 1s ease-out infinite both;
 }
 
-//blog header
-.blogHeader {
-    background-image: url(../captured-final-assets/blog-header.jpg);
+//blog header and contact header
+.blogHeader,
+.contactHeader {
     background-position: center;
-    
+
     .headerText {
         bottom: 50%;
+        z-index: 10;
     }
+}
+
+.blogHeader {
+    background-image: url(../captured-final-assets/blog-header.jpg);
 }
 
 //contact header
 .contactHeader {
     background-image: url(../captured-final-assets/contact-header.jpg);
-    background-position: center;
     height: 50vh;
-
-    .headerText {
-        bottom: 50%;
-    }
-}
-
-//blog header
-.blogHeader .wrapper:nth-child(2) {
-    text-align: center;
-    bottom: 50%;
-}
-
-.blogHeader h2 {
-    z-index: 10;
 }
 

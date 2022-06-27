@@ -12,10 +12,6 @@
 }
 
 // navbar
-nav {
-    z-index: 10;
-}
-
 .navBar {
     font-family: $headingFont;
     text-transform: uppercase;
@@ -23,6 +19,7 @@ nav {
     line-height: 2.9rem;
     letter-spacing: 1px;
     padding: 10px 0;
+    z-index: 10;
 
     .desktopNav {
         display: flex;
