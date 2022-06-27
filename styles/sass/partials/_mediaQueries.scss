@@ -1,5 +1,4 @@
 //adjusting for blog post header
-
 @media (min-width: 1990px) {
     .blogTextContainer {
         padding-top: 450px;
@@ -32,15 +31,14 @@
 
 //lower screen breakpoints
 @media (max-width: 1780px) {
-    //BLOG ADJUSTMENTS
+    //BLOG PG ADJUSTMENTS
     .blogTextContainer {
         padding-top: 350px;
     }
 }
 
 @media (max-width: 1560px) {
-
-    //BLOG ADJUSTMENTS
+    //BLOG PG ADJUSTMENTS
     .blogImgContainer {
         top: -12%;
     }
@@ -51,7 +49,7 @@
 }
 
 @media (max-width: 1400px) {
-    //BLOG ADJUSTMENTS
+    //BLOG PG ADJUSTMENTS
     .blogTextContainer {
         padding-top: 280px;
     }
@@ -60,7 +58,7 @@
         padding-right: 40px;
     }
 
-    //CONTACT PAGE
+    //CONTACT PG
     .contactHeader {
         height: 40vh;
 
@@ -69,7 +67,7 @@
         }
     }
 
-    //contact pg: email form
+    //CONTACT PG: email form
     .emailMe .wrapper {
         flex-direction: column;
         align-items: center;
@@ -82,7 +80,7 @@
         border: 10px solid $seaGreen;
     }
 
-    //contact pg: address
+    //CONTACT PG: address
     .address {
         align-items: center;
         text-align: center;
@@ -281,7 +279,7 @@
         display: block;
     }
     
-    //index header
+    //INDEX PG: header
     header .headerText {
         bottom: 5%;
     }
@@ -298,18 +296,18 @@
         height: 100vh;
     }
 
-    //index page: sections
+    //INDEX PG: sections
     p {
         line-height: 3rem;
         text-align: center;
     }
 
-    //index page: about
+    //INDEX PG: about
     .about {
         padding: 100px 0;
     }
 
-    //index page: article info section
+    //INDEX PG: article info section
     .articlePost {
         padding-top: 50px;
     }
@@ -331,7 +329,7 @@
     .articlePost .articlePostItem2 {
         flex-direction: column;
 
-        div:nth-child(2) > div:nth-child(1) {
+        div:nth-child(2) > div:first-child {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -342,7 +340,7 @@
         width: 100%;
     }
 
-    //index page: info section
+    //INDEX PG: info section
     .info {
         padding: 200px 0 100px 0;
 
@@ -369,11 +367,11 @@
         }
     }
 
-    article.infoItem:nth-child(4) {
+    article.infoItem:last-child {
         margin: 0;
     }
 
-    //index page: gallery section
+    //INDEX PG: gallery section
     .gallery {
         padding: 50px 0;
     }
@@ -392,7 +390,7 @@
         }
     }
 
-    //blog page
+    //BLOG PG
     .leftMainContent {
         margin-bottom: 40px;
     }
@@ -416,7 +414,7 @@
         padding: 0;
     }
 
-    //blog page: forms
+    //BLOG PG: forms
     fieldset {
         flex-direction: column;
     }
@@ -436,7 +434,7 @@
         padding: 0;
     }
 
-    //contact page
+    //CONTACT PG
     .contactHeader .headerText {
         bottom: 35%;
     }
@@ -466,7 +464,7 @@
         font-size: 3rem;
     }
 
-    //index pg: article section
+    //INDEX PG: article section
     .articlePostItem1,
     .articlePostItem2 {
         .articleImgContainer {
@@ -474,7 +472,7 @@
         }
     }
 
-    //index pg: info section
+    //INDEX PG: info section
     .info {
         padding: 150px 0 50px 0;
 
@@ -483,12 +481,12 @@
         }
     }
 
-    //index pg: banner
+    //INDEX PG: banner
     .banner {
         height: 300px;
     }
 
-    //index pg: feature profile
+    //INDEX PG: feature profile
     .feature {
         .featureImgContainer img {
             border: none;
@@ -499,13 +497,13 @@
         }
     }
 
-    //index pg: about and feature section
+    //INDEX PG: about and feature section
     .about,
     .feature {
         padding: 50px 0;
     }
 
-    //blog page: sidebar
+    //BLOG PG: sidebar
     .sideBar {
         min-height: 0;
 
@@ -514,7 +512,7 @@
         }
     }
 
-    //contact pg
+    //CONTACT PG:
     .emailForm {
         width: 100%;
         padding: 0;

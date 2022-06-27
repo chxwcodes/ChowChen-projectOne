@@ -21,10 +21,6 @@
         display: flex;
         flex-direction: column;
 
-        .articleImgContainer img{
-            width: 90%;
-        }
-        
         .articleTextContainer {
             padding: 50px 0;
         }
@@ -34,7 +30,6 @@
         flex-direction: column-reverse;
     }
 }
-
 
 .articlePostItem1 {
     .wrapper {
@@ -222,26 +217,9 @@
 }
 
 .blog {
-    width: 100%;
     border-bottom: 10px solid $canary;
     border-left: 10px solid $canary;
     padding-left: 40px;
-}
-
-.blogTextContainer {
-    padding-top: 420px;
-
-    h3 {
-        margin-bottom: 20px;
-    }
-}
-
-.comments{
-    padding: 40px 0 40px 40px;
-}
-
-.commentForm {
-    padding: 0 40px 40px;
 }
 
 .blogImgContainer {
@@ -256,7 +234,23 @@
     }
 }
 
+.blogTextContainer {
+    padding-top: 420px;
+
+    h3 {
+        margin-bottom: 20px;
+    }
+}
+
 //comment section
+.comments{
+    padding: 40px 0 40px 40px;
+}
+
+.commentForm {
+    padding: 0 40px 40px;
+}
+
 .comments h4 {
     margin-bottom: 40px;
 }
