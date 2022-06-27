@@ -282,7 +282,7 @@
     }
 
     h1 {
-        font-size: 7rem;
+        font-size: 15vw;
     }
 
     .indexHeader {
@@ -428,22 +428,22 @@
     }
 
     //contact page
+    .contactHeader .headerText {
+        bottom: 30%;
+    }
+
     .emailForm {
-        width: 75%;
+        width: 70%;
         padding: 50px;
-        box-shadow: none;
-        border: 10px solid $canary;
     }
-
-    .address .wrapper {
-        height: calc(60vh - 40px);
-    }
-
-
 }
 
 @media (max-width: 500px){
     //typography
+    h2, h3, h4 {
+        text-align: center;
+    }
+
     h2 {
         font-size: 6rem;
     }
@@ -454,20 +454,6 @@
 
     h4 {
         font-size: 3rem;
-    }
-
-    //slide out menu 
-    .menuClose {
-        display: flex;
-    }
-
-    .slideOutNav {
-        padding: 50px;
-    }
-
-    //index pg: about section
-    .about h3 {
-        text-align: center;
     }
 
     //index pg: info section
@@ -493,6 +479,20 @@
     .about,
     .feature {
         padding: 50px 0;
+    }
+
+    //about pg
+    .emailForm {
+        width: 100%;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    }
+
+    input[type='text'],
+    input[type='email'],
+    textarea {
+        margin-bottom: 20px;
     }
 }
 

@@ -38,6 +38,9 @@ img {
 
 button {
     border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
 }
 
 .linkBtn,
@@ -47,7 +50,6 @@ button[type=submit] {
     line-height: 3.2rem;
     letter-spacing: 1px;
     text-transform: uppercase;
-    cursor: pointer;
     background-color: $seaGreen;
     border: 2px solid $seaGreen;
     padding: 5px 15px;

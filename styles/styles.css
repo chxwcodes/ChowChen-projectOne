@@ -329,6 +329,9 @@ img {
 
 button {
   border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
 }
 
 .linkBtn,
@@ -338,7 +341,6 @@ button[type=submit] {
   line-height: 3.2rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  cursor: pointer;
   background-color: #4ceea7;
   border: 2px solid #4ceea7;
   padding: 5px 15px;
@@ -386,7 +388,7 @@ button[type=submit]:focus {
 }
 
 nav {
-  z-index: 100;
+  z-index: 10;
 }
 
 .navBar {
@@ -395,10 +397,6 @@ nav {
   font-size: 2rem;
   line-height: 2.9rem;
   letter-spacing: 1px;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 10px 0;
 }
 .navBar .desktopNav {
@@ -430,8 +428,8 @@ nav {
 .mobileNav {
   display: none;
   position: fixed;
-  top: 40px;
-  right: 40px;
+  top: 20px;
+  left: 20px;
   z-index: 100;
 }
 .mobileNav i {
@@ -443,7 +441,7 @@ nav {
   position: absolute;
 }
 .mobileNav input[type=checkbox]:checked ~ .slideOutNav {
-  left: 0;
+  top: 0;
 }
 
 .mobileMenuBtn {
@@ -451,60 +449,63 @@ nav {
 }
 
 .slideOutNav {
-  position: fixed;
-  top: 0;
-  left: -500px;
-  height: 100vh;
   background-color: #2c2c2c;
-  width: 100%;
-  max-width: 400px;
-  padding: 75px 50px;
+  position: fixed;
+  top: -500px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  max-height: 400px;
+  padding: 50px 0;
+  z-index: 10;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.slideOutNav .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 10;
-  -webkit-transition: left 0.7s;
-  transition: left 0.7s;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
-.slideOutNav a {
+.slideOutNav a,
+.slideOutNav .menuClose {
   font-family: "Playfair Display", serif;
   text-transform: uppercase;
   color: #fafafa;
   font-size: 4rem;
-  border-bottom: 3px solid rgba(76, 238, 167, 0);
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
-.slideOutNav a:hover, .slideOutNav a:focus {
+.slideOutNav a:hover, .slideOutNav a:focus,
+.slideOutNav .menuClose:hover,
+.slideOutNav .menuClose:focus {
   color: #4ceea7;
-  border-bottom: 3px solid #4ceea7;
+}
+.slideOutNav .menuClose {
+  color: #4ceea7;
+  border: 2px solid #4ceea7;
+  padding: 5px 15px;
+}
+.slideOutNav .menuClose:hover, .slideOutNav .menuClose:focus {
+  color: #fafafa;
+  border: 2px solid #fafafa;
 }
 .slideOutNav li {
+  text-align: center;
   margin-bottom: 20px;
 }
 .slideOutNav li:last-child {
   margin-bottom: 0;
-}
-
-.menuClose {
-  background-color: transparent;
-  color: #fafafa;
-  font-size: 5rem;
-  display: none;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-transition: color 0.7s;
-  transition: color 0.7s;
-}
-.menuClose:hover, .menuClose:focus {
-  color: #4ceea7;
 }
 
 header {
@@ -1374,7 +1375,7 @@ form {
   }
 
   h1 {
-    font-size: 7rem;
+    font-size: 15vw;
   }
 
   .indexHeader {
@@ -1534,19 +1535,20 @@ input[type=email] {
     padding: 0;
   }
 
-  .emailForm {
-    width: 75%;
-    padding: 50px;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    border: 10px solid #fdfa69;
+  .contactHeader .headerText {
+    bottom: 30%;
   }
 
-  .address .wrapper {
-    height: calc(60vh - 40px);
+  .emailForm {
+    width: 70%;
+    padding: 50px;
   }
 }
 @media (max-width: 500px) {
+  h2, h3, h4 {
+    text-align: center;
+  }
+
   h2 {
     font-size: 6rem;
   }
@@ -1557,20 +1559,6 @@ input[type=email] {
 
   h4 {
     font-size: 3rem;
-  }
-
-  .menuClose {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .slideOutNav {
-    padding: 50px;
-  }
-
-  .about h3 {
-    text-align: center;
   }
 
   .info {
@@ -1591,5 +1579,18 @@ input[type=email] {
   .about,
 .feature {
     padding: 50px 0;
+  }
+
+  .emailForm {
+    width: 100%;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  input[type=text],
+input[type=email],
+textarea {
+    margin-bottom: 20px;
   }
 }

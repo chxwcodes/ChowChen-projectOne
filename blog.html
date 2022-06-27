@@ -24,6 +24,8 @@
     <!-- HEADER SECTION -->
     <header class="blogHeader">
         <!-- Navigation -->
+        
+        <!-- Desktop NAV -->
         <nav class="navBar">
             <div class="wrapper">
                 <ul class="desktopNav">
@@ -31,35 +33,36 @@
                     <li><a href="#">About</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <!--END wrapper-->
-        </nav> <!-- END navBar -->
+                </ul> <!-- END desktopNav -->
+            </div><!-- END wrapper -->
+        </nav>
+        <!--END navBar-->
         
-        <!-- mobile hamburger nav -->
+        <!-- mobile NAV -->
         <nav class="mobileNav">
             <!-- slide out menu btn -->
             <input type="checkbox" id="openSideMenu">
             <label for="openSideMenu" class="mobileMenuBtn">
-                <i class="fa-solid fa-bars" aria-label="Open menu button"></i>
+                <i class="fa-solid fa-bars" aria-label="Open menu button" tabindex="0"></i>
             </label>
         
             <!-- slide out nav contents -->
             <div class="slideOutNav">
-                <button class="menuClose">x</button>
-        
-                <!-- menu content -->
-                <nav>
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <!--END slide out menu content-->
-            </div>
-            <!--END slideOutNav -->
+                <div class="wrapper">
+                    <!-- slideOutNav top main menu content -->
+                    <nav>
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                        <!--END slide out menu content-->
+                    </nav> <!-- END menu contents-->
+                    
+                    <button class="menuClose">Close</button>
+                </div> <!-- END wrapper -->
+            </div> <!-- END slideOutNav-->
         </nav> <!-- END mobileNav -->
         
         <div class="wrapper headerText">
