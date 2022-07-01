@@ -342,28 +342,26 @@
 
     //INDEX PG: info section
     .info {
-        padding: 200px 0 100px 0;
+        padding: 50px 0;
 
-        h4 {
-            padding-left: 0;
-            display: flex;
-            justify-content: center;
+        .infoItem {
+            margin-bottom: 20px;
 
-            &::before {
+            i {
                 font-size: 3.5rem;
                 width: 75px;
                 height: 75px;
-                bottom: 100%;
-                left: revert;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .infoItemTitle {
+                flex-direction: column;
             }
         }
 
         p {
             padding-left: 0;
-        }
-
-        .infoItem {
-            margin-bottom: 100px;
         }
     }
 
@@ -473,12 +471,8 @@
     }
 
     //INDEX PG: info section
-    .info {
-        padding: 150px 0 50px 0;
-
-        .infoItem {
-            width: 100%;
-        }
+    .info .infoItem {
+        width: 100%;
     }
 
     //INDEX PG: banner

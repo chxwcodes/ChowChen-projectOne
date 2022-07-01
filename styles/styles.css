@@ -672,21 +672,11 @@ header .headerText {
 .info .infoItem {
   width: 45%;
 }
-.info h4 {
-  position: relative;
-  padding-left: 50px;
-}
-.info h4::before {
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
+.info .infoItem i {
   font-size: 2.5rem;
-  font-family: "Font Awesome 6 Free";
+  background-color: #4ceea7;
   width: 40px;
   height: 40px;
-  background-color: #4ceea7;
-  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -696,27 +686,19 @@ header .headerText {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  left: 0;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.info .infoItem .infoItemTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .info p {
   padding-left: 50px;
-}
-
-.item1::before {
-  content: "\f030";
-}
-
-.item2::before {
-  content: "\f0c0";
-}
-
-.item3::before {
-  content: "\f15b";
-}
-
-.item4::before {
-  content: "\f095";
 }
 
 .banner {
@@ -1428,29 +1410,26 @@ form {
   }
 
   .info {
-    padding: 200px 0 100px 0;
+    padding: 50px 0;
   }
-  .info h4 {
-    padding-left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .info .infoItem {
+    margin-bottom: 20px;
   }
-  .info h4::before {
+  .info .infoItem i {
     font-size: 3.5rem;
     width: 75px;
     height: 75px;
-    bottom: 100%;
-    left: revert;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .info .infoItem .infoItemTitle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .info p {
     padding-left: 0;
-  }
-  .info .infoItem {
-    margin-bottom: 100px;
   }
 
   article.infoItem:last-child {
@@ -1555,9 +1534,6 @@ input[type=email] {
     width: 100%;
   }
 
-  .info {
-    padding: 150px 0 50px 0;
-  }
   .info .infoItem {
     width: 100%;
   }

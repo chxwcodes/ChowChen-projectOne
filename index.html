@@ -19,7 +19,7 @@
 </head>
 <body>
     <!-- SKIP LINK -->
-    <a href="#mainContent" class="skip-link">Skip to main content.</a>
+    <a href="#mainContent" class="skip-link">Skip to main content</a>
 
     <!-- HEADER SECTION -->
     <header class="indexHeader">
@@ -41,7 +41,7 @@
         <nav class="mobileNav">
             <!-- slide out menu btn -->
             <input type="checkbox" id="openSideMenu">
-            <label for="openSideMenu" class="mobileMenuBtn">
+            <label for="openSideMenu" tabindex="-1" class="mobileMenuBtn">
                 <i class="fa-solid fa-bars" aria-label="Open menu button" tabindex="0"></i>
             </label>
         
@@ -128,27 +128,43 @@
             <div class="wrapper">
                 <!-- info item 1 -->
                 <article class="infoItem">
-                    <h4 class="item1"><a href="#">Top picks</a></h4>
+                    <div class="infoItemTitle">
+                        <i class="fa-solid fa-camera" aria-hidden="true"></i>
+                        <h4><a href="#">Top picks</a></h4>
+                    </div>
+                    
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus, provident odio amet earum soluta dolorem vero, non minima quibusdam sit nemo eveniet dolore ullam.</p>
                 </article> <!-- END info item 1-->
                 
                 <!-- info item 2 -->
                 <article class="infoItem">
-                    <h4 class="item2"><a href="#">Community</a></h4>
+                    <div class="infoItemTitle">
+                        <i class="fa-solid fa-users" aria-hidden="true"></i>
+                        <h4><a href="#">Community</a></h4>
+                    </div>
+                   
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus, provident odio amet earum
                         soluta dolorem vero, non minima quibusdam sit nemo eveniet dolore ullam.</p>
                 </article> <!-- END info item 2-->
                 
                 <!-- info item 3 -->
                 <article class="infoItem">
-                    <h4 class="item3"><a href="./blog.html">Blog</a></h4>
+                    <div class="infoItemTitle">
+                        <i class="fa-solid fa-file" aria-hidden="true"></i>
+                        <h4><a href="./blog.html">Blog</a></h4>
+                    </div>
+                    
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus, provident odio amet earum
                         soluta dolorem vero, non minima quibusdam sit nemo eveniet dolore ullam.</p>
                 </article> <!-- END info item 3-->
                 
                 <!-- info item 4 -->
                 <article class="infoItem">
-                    <h4 class="item4"><a href="./contact.html">Get in touch</a></h4>
+                    <div class="infoItemTitle">
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <h4><a href="./contact.html">Get in touch</a></h4>
+                    </div>
+                    
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus, provident odio amet earum
                         soluta dolorem vero, non minima quibusdam sit nemo eveniet dolore ullam.</p>
                 </article> <!-- END info item 4-->
