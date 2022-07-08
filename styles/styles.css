@@ -1574,6 +1574,9 @@ input[type=email] {
   .banner {
     height: 300px;
   }
+  .banner button {
+    top: 45%;
+  }
 
   .feature .featureImgContainer img {
     border: none;
