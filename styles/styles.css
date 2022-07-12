@@ -260,6 +260,7 @@ h1 {
   font-size: 13.8rem;
   text-shadow: 2px 2px #F3F3F3;
   text-align: center;
+  color: #2c2c2c;
 }
 
 h2 {
@@ -309,7 +310,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #2c2c2c;
   -webkit-transition: color 0.7s;
   transition: color 0.7s;
 }
@@ -353,6 +354,11 @@ button[type=submit] {
 button[type=submit]:hover,
 button[type=submit]:focus {
   background-color: transparent;
+}
+
+.darkMode {
+  color: #fafafa !important;
+  background-color: #2c2c2c !important;
 }
 
 @-webkit-keyframes iconSlideDown {
@@ -1095,7 +1101,6 @@ form {
   .blogTextContainer {
     padding-top: 450px;
   }
-
   .leftMainContent {
     width: 61%;
   }
@@ -1104,7 +1109,6 @@ form {
   .blogTextContainer {
     padding-top: 520px;
   }
-
   .leftMainContent {
     width: 61%;
   }
@@ -1113,7 +1117,6 @@ form {
   .blogTextContainer {
     padding-top: 600px;
   }
-
   .leftMainContent {
     width: 62%;
   }
@@ -1127,7 +1130,6 @@ form {
   .blogImgContainer {
     top: -12%;
   }
-
   .leftMainContent {
     width: 59%;
   }
@@ -1136,18 +1138,15 @@ form {
   .blogTextContainer {
     padding-top: 280px;
   }
-
   .blogEntry {
     padding-right: 40px;
   }
-
   .contactHeader {
     height: 40vh;
   }
   .contactHeader .headerText {
     bottom: 35%;
   }
-
   .emailMe .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1159,13 +1158,11 @@ form {
     height: inherit;
     padding-top: 50px;
   }
-
   .emailForm {
     -webkit-box-shadow: none;
             box-shadow: none;
     border: 10px solid #4ceea7;
   }
-
   .address {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1181,11 +1178,9 @@ form {
   .blogHeader .headerText {
     bottom: 50%;
   }
-
   .leftMainContent {
     width: 100%;
   }
-
   .blog {
     border: none;
     padding-left: 0;
@@ -1193,7 +1188,6 @@ form {
   .blog .blogEntry {
     padding-right: none;
   }
-
   .blogMainContent {
     padding: 50px 0;
   }
@@ -1203,7 +1197,6 @@ form {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
   .blogImgContainer {
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -1212,11 +1205,9 @@ form {
     width: 90%;
     margin: 0 auto;
   }
-
   .blogTextContainer {
     padding-top: 20px;
   }
-
   .sideBar {
     padding: 30px;
     margin-top: 0;
@@ -1240,7 +1231,6 @@ form {
   header .wrapper:nth-child(2) {
     bottom: 5%;
   }
-
   .headerImg {
     height: 500px;
     width: 50%;
@@ -1248,11 +1238,9 @@ form {
     border: 30px solid #fdfa69;
     border-right: none;
   }
-
   .about {
     padding: 200px 0 100px 0;
   }
-
   .articlePost {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1276,7 +1264,6 @@ form {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-
   .articlePostItem1 .articleImgContainer,
 .articlePostItem2 .articleImgContainer {
     position: static;
@@ -1295,11 +1282,9 @@ form {
     width: 100%;
     border-bottom: 10px solid #fdfa69;
   }
-
   .articleTextContainer {
     width: 50%;
   }
-
   .info {
     padding: 100px 0;
   }
@@ -1311,7 +1296,6 @@ form {
   .info .infoItem {
     width: 65%;
   }
-
   .feature .wrapper {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1346,12 +1330,10 @@ form {
             align-items: center;
     margin-top: 20px;
   }
-
   .featureText h3,
 .featureText p {
     text-align: center;
   }
-
   .gallery {
     padding: 50px 0;
   }
@@ -1360,44 +1342,34 @@ form {
   .scrollDown {
     display: block;
   }
-
   .navBar {
     display: none;
   }
-
   .mobileNav {
     display: block;
   }
-
   header .headerText {
     bottom: 5%;
   }
-
   .headerImg {
     display: none;
   }
-
   h1 {
     font-size: 15vw;
   }
-
   .indexHeader {
     height: 100vh;
   }
-
   p {
     line-height: 3rem;
     text-align: center;
   }
-
   .about {
     padding: 100px 0;
   }
-
   .articlePost {
     padding-top: 50px;
   }
-
   .articlePost .articlePostItem1,
 .articlePost .articlePostItem2 {
     -webkit-box-orient: vertical;
@@ -1412,13 +1384,11 @@ form {
 .articlePost .articlePostItem2 .articleImgContainer img {
     width: 100%;
   }
-
   .articlePostItem1 .wrapper {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-
   .articlePost .articlePostItem2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1437,11 +1407,9 @@ form {
         -ms-flex-align: center;
             align-items: center;
   }
-
   .articleTextContainer {
     width: 100%;
   }
-
   .info {
     padding: 50px 0;
   }
@@ -1464,15 +1432,12 @@ form {
   .info p {
     padding-left: 0;
   }
-
   article.infoItem:last-child {
     margin: 0;
   }
-
   .gallery {
     padding: 50px 0;
   }
-
   .gallery ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1489,56 +1454,45 @@ form {
   .gallery ul li:last-child {
     margin-bottom: 0;
   }
-
   .leftMainContent {
     margin-bottom: 40px;
   }
-
   .blogMainContent p {
     text-align: left;
   }
-
   .blogTextContainer h3,
 time.postDate:nth-child(2) {
     text-align: center;
     display: block;
   }
-
   .blogEntry {
     margin-bottom: 40px;
   }
-
   .comments,
 .blogEntry {
     padding: 0;
   }
-
   fieldset {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
   input[type=text],
 input[type=email] {
     width: inherit;
     border: 2px solid #4ceea7;
     margin-bottom: 40px;
   }
-
   textarea {
     margin-bottom: 40px;
   }
-
   .commentForm {
     padding: 0;
   }
-
   .contactHeader .headerText {
     bottom: 35%;
   }
-
   .emailForm {
     width: 70%;
     padding: 50px;
@@ -1548,62 +1502,51 @@ input[type=email] {
   h2, h3, h4 {
     text-align: center;
   }
-
   h2 {
     font-size: 4.5rem;
     line-height: 4rem;
   }
-
   h3 {
     font-size: 3.5rem;
   }
-
   h4 {
     font-size: 3rem;
   }
-
   .articlePostItem1 .articleImgContainer,
 .articlePostItem2 .articleImgContainer {
     width: 100%;
   }
-
   .info .infoItem {
     width: 100%;
   }
-
   .banner {
     height: 300px;
   }
   .banner button {
     top: 45%;
   }
-
   .feature .featureImgContainer img {
     border: none;
   }
   .feature .featureTextContainer {
     width: 100%;
   }
-
   .about,
 .feature {
     padding: 50px 0;
   }
-
   .sideBar {
     min-height: 0;
   }
   .sideBar::before {
     height: 300px;
   }
-
   .emailForm {
     width: 100%;
     padding: 0;
     border: none;
     background-color: transparent;
   }
-
   input[type=text],
 input[type=email],
 textarea {

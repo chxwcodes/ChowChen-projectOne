@@ -32,3 +32,5 @@ commentForm.addEventListener('submit', function(e) {
     commentSection.appendChild(article);
     
 })
+
+

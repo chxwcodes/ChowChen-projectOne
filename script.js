@@ -48,3 +48,25 @@ btnPrev.addEventListener('click', function () {
     });
 });
 
+
+//dark mode button
+const toggle = document.querySelector("#toggle");
+let isLight = true;
+
+toggle.addEventListener('click', function () {
+    isLight = !isLight;
+    isLight ? toggle.innerText = '🌞' : toggle.innerText = '🌚';
+    const rootElement = document.body;
+    rootElement.classList.toggle('darkMode');
+
+    const sections = document.querySelectorAll('section');
+    sections.forEach((section) => {
+        section.classList.toggle('darkMode');
+    })
+
+    const h4Titles = document.querySelectorAll('.info h4 a');
+    h4Titles.forEach((title) => {
+        title.classList.toggle('darkMode');
+    })
+    
+})
