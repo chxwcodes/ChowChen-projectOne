@@ -1,36 +1,43 @@
 //COMMENTOR SUBMISSION
-const commentForm = document.querySelector('.commentForm');
+const commentApp = {};
 
-console.log(commentForm)
+commentApp.commentForm = document.querySelector('.commentForm');
 
-commentForm.addEventListener('submit', function(e) {
-    e.preventDefault();
+commentApp.displayComment = () => {
+    commentApp.commentForm.addEventListener('submit', function (e) {
+        e.preventDefault();
 
-    //save user's inputs
-    const userName = document.querySelector('#name').value;
-    const userComment = document.querySelector('#addComment').value;
+        //save user's inputs
+        const userName = document.querySelector('#name').value;
+        const userComment = document.querySelector('#addComment').value;
 
-    //new elements
-    const article = document.createElement('article');
-    article.classList.add('commentor');
+        //new elements
+        const article = document.createElement('article');
+        article.classList.add('commentor');
 
-    const imgContainer = document.createElement('div');
-    imgContainer.classList.add('commentorImgContainer');
-    imgContainer.innerHTML = `<img src="./captured-final-assets/comment-2.jpg" alt="a close up shot of a blond girl smiling">`;
+        const imgContainer = document.createElement('div');
+        imgContainer.classList.add('commentorImgContainer');
+        imgContainer.innerHTML = `<img src="./captured-final-assets/comment-2.jpg" alt="a close up shot of a blond girl smiling">`;
 
-    const textContainer = document.createElement('div');
-    textContainer.classList.add('commentorTextContainer');
-    const userCommentInfo = `
-    <time datetime="2019-10-10" class="postDate">Tuesday October 10th by ${userName}</time>
-    <p>${userComment}</p>`;
-    textContainer.innerHTML = userCommentInfo;
+        const textContainer = document.createElement('div');
+        textContainer.classList.add('commentorTextContainer');
+        const userCommentInfo = `
+        <time datetime="2019-10-10" class="postDate">Tuesday October 10th by ${userName}</time>
+        <p>${userComment}</p>`;
+        textContainer.innerHTML = userCommentInfo;
 
-    article.appendChild(imgContainer);
-    article.appendChild(textContainer);
+        article.appendChild(imgContainer);
+        article.appendChild(textContainer);
 
-    const commentSection = document.querySelector('.comments');
-    commentSection.appendChild(article);
-    
-})
+        const commentSection = document.querySelector('.comments');
+        commentSection.appendChild(article);
+    })
+}
+
+commentApp.init = () => {
+    commentApp.displayComment();
+}
+
+commentApp.init();
 
 

@@ -1,72 +1,111 @@
-//SLIDE OUT MOBILE MENU:
-const slideOutNav = document.querySelector('.mobileNav div');
+const mobileNav ={};
 
-//when the hamburger menu is clicked, display the slideout menu:
-const mobileBtn = document.querySelector('.mobileNav i');
+mobileNav.slideOutNav = document.querySelector('.mobileNav div');
 
-mobileBtn.addEventListener('click', function() {
-    slideOutNav.style.top = 0;
-})
+mobileNav.showNav = () => {
+    //when the hamburger menu is clicked, display the slideout menu:
+    mobileNav.mobileBtn = document.querySelector('.mobileNav i');
 
-//when the close btn is clicked, close the slide out menu
-const closeBtn = document.querySelector('.mobileNav button');
+    mobileNav.mobileBtn.addEventListener('click', function () {
+        mobileNav.slideOutNav.style.top = 0;
+    })
+}
 
-closeBtn.addEventListener('click', function() {
-    slideOutNav.style.top = '-500px';
-})
+mobileNav.hideNav = () => {
+    //when the close btn is clicked, close the slide out menu
+    mobileNav.closeBtn = document.querySelector('.mobileNav button');
+
+    mobileNav.closeBtn.addEventListener('click', function () {
+        mobileNav.slideOutNav.style.top = '-500px';
+    })
+}
+
+mobileNav.init = () => {
+    mobileNav.showNav();
+    mobileNav.hideNav();
+}
+
+mobileNav.init();
 
 //IMAGE GALLERY SLIDESHOW:
-const slides = document.querySelectorAll('.banner li');
+const galleryApp = {};
 
-const btnNext = document.querySelector('.btnNext');
-const btnPrev = document.querySelector('.btnPrev');
+galleryApp.slides = document.querySelectorAll('.banner li');
 
-let currentSlide = 0;
-const maxSlide = slides.length - 1;
+galleryApp.currentSlide = 0;
+galleryApp.maxSlide = galleryApp.slides.length - 1;
 
-btnNext.addEventListener('click', function() {
-    if (currentSlide === maxSlide) {
-        currentSlide = 0;
-    } else {
-        currentSlide++;
-    }
+galleryApp.showNextImg = () => {
+    galleryApp.btnNext = document.querySelector('.btnNext');
 
-    slides.forEach((slide, index) => {
-        slide.style.transform = `translateX(${100 * (index - currentSlide)}%)`;
+    galleryApp.btnNext.addEventListener('click', function () {
+        if (galleryApp.currentSlide === galleryApp.maxSlide) {
+            galleryApp.currentSlide = 0;
+        } else {
+            galleryApp.currentSlide++;
+        }
+
+        galleryApp.slides.forEach((slide, index) => {
+            slide.style.transform = `translateX(${100 * (index - galleryApp.currentSlide)}%)`;
+        });
     });
-});
+}
 
-btnPrev.addEventListener('click', function () {
-    if (currentSlide === 0) {
-        currentSlide = maxSlide;
-    } else {
-        currentSlide--;
-    }
+galleryApp.showPrevImg = () => {
+    galleryApp.btnPrev = document.querySelector('.btnPrev');
 
-    slides.forEach((slide, index) => {
-        slide.style.transform = `translateX(${100 * (index - currentSlide)}%)`;
+    galleryApp.btnPrev.addEventListener('click', function () {
+        if (galleryApp.currentSlide === 0) {
+            galleryApp.currentSlide = galleryApp.maxSlide;
+        } else {
+            galleryApp.currentSlide--;
+        }
+
+        galleryApp.slides.forEach((slide, index) => {
+            slide.style.transform = `translateX(${100 * (index - galleryApp.currentSlide)}%)`;
+        });
     });
-});
+}
 
+galleryApp.init = () => {
+    galleryApp.showNextImg();
+    galleryApp.showPrevImg();
+}
+
+galleryApp.init();
 
 //dark mode button
-const toggle = document.querySelector("#toggle");
-let isLight = true;
+const toggleApp = {};
 
-toggle.addEventListener('click', function () {
-    isLight = !isLight;
-    isLight ? toggle.innerText = '🌞' : toggle.innerText = '🌚';
-    const rootElement = document.body;
-    rootElement.classList.toggle('darkMode');
+toggleApp.toggle = document.querySelector("#toggle");
+toggleApp.isLight = true;
 
-    const sections = document.querySelectorAll('section');
-    sections.forEach((section) => {
-        section.classList.toggle('darkMode');
-    })
+toggleApp.switchThemes = () => {
+    toggleApp.toggle.addEventListener('click', function () {
+        toggleApp.isLight = !toggleApp.isLight;
+        toggleApp.isLight ? toggleApp.toggle.innerText = '🌞' : toggleApp.toggle.innerText = '🌚';
+        const rootElement = document.body;
+        rootElement.classList.toggle('darkMode');
 
-    const h4Titles = document.querySelectorAll('.info h4 a');
-    h4Titles.forEach((title) => {
-        title.classList.toggle('darkMode');
-    })
-    
-})
+        const sections = document.querySelectorAll('section');
+        sections.forEach((section) => {
+            section.classList.toggle('darkMode');
+        })
+
+        const h4Titles = document.querySelectorAll('.info h4 a');
+        h4Titles.forEach((title) => {
+            title.classList.toggle('darkMode');
+        });
+
+    });
+}
+
+toggleApp.init = () => {
+    toggleApp.switchThemes();
+}
+
+toggleApp.init();
+
+
+
+
