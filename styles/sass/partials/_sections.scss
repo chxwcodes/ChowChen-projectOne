@@ -110,10 +110,47 @@
 
 //banner section
 .banner {
-    background-image: url(../captured-final-assets/banner.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 500px;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    
+    li {
+        width: 100%;
+        height: 700px;
+        position: absolute;
+        transition: 0.4s;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    button {
+        position: absolute;
+        top: 50%;
+        font-size: 6rem;
+        font-weight: bold;
+        color: $seaGreen;
+        text-shadow: 2px 2px $black;
+        transition: color 0.4s;
+        z-index: 10;
+
+        &:hover {
+            color: $canary;
+        }
+            
+    }
+}
+
+.btnNext {
+    right: 2%;
+}
+
+.btnPrev {
+    left: 2%;
 }
 
 //profile feature section
