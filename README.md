@@ -4,7 +4,9 @@
 
 ## Overview
 
-Was given a multi-page desktop design for a Photography blog website and asked to translate it using HTML & CSS. Added in some Javascript features in for practice (gallery carousel, night mode, comment uploading, and hamburger menu).
+Was given a multi-page desktop design for a Photography blog website and asked to translate it using pure HTML & CSS. 
+
+Later added in some Javascript features in for practice (gallery carousel, night mode, comment uploading, and hamburger menu).
 
 ## Features
 
