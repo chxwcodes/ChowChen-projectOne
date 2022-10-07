@@ -30,6 +30,6 @@ I wrote little notes on what HTML semantics I should use while coding the HTML. 
 ![Screenshot of the design guideline](./captured-final-assets/mockups/Captured-home.png 'Home Page')
 ![Screenshot of the design guideline](./captured-final-assets/mockups/Captured-blog-post.png 'Blog Page')
 ![Screenshot of the design guideline](./captured-final-assets/mockups/Captured-contact.png 'Contact Page')
-![Screenshot of the design guideline](./captured-final-assets/mockups/styleguide.png 'Style guide')
+![Screenshot of the design guideline](./captured-final-assets/mockups/styleguide.jpg 'Style guide')
 
 
